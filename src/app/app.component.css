@@ -573,7 +573,7 @@ textarea {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .side-left {
     padding-top: 40px;
   }
