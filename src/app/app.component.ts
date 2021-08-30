@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ProjectsService } from 'src/app/services/projects.service';
-import { Project} from 'src/app/modules/project';
+import { Project} from 'src/app/modules/Project';
 
 @Component({
   selector: 'app-root',

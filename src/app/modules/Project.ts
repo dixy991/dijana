@@ -1,3 +1,5 @@
 export interface Project {
-    name: string
+    name: string,
+    link: string
+    gitLink: string
 }
