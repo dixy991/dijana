@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { ProjectsService } from 'src/app/services/projects.service';
+import { Project} from 'src/app/modules/project';
 
 @Component({
   selector: 'app-root',
@@ -15,19 +17,21 @@ export class AppComponent implements OnInit {
   http: HttpClient;
   endpoint = 'http://localhost:8000/mail.php';
 
-  constructor(http: HttpClient) {
+  constructor(http: HttpClient, private projectsService:ProjectsService) {
     this.http = http;
   }
 
   ngOnInit() {
-    this.projects = [
-      'Vains in the Earth',
-      'Sun Dried',
-      'Above Sea Level',
-      'Coloured Mountains',
-    ];
     this.startClock();
     this.changeOnResponsive();
+    this.projectsService.getAllProjects().subscribe(
+      (Response: Project[]) => {
+        this.projects = Response;
+      },
+      error => {
+        alert("Sorry, we have a little technical difficulties!");
+      }
+    );
   }
 
   openLeft() {

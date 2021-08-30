@@ -28,12 +28,9 @@
       <div class="col-xs-12 align-center content-wrap add-padding">
         <section class="intro-text">
           <h1 class="slideIn">Dijana Lazic</h1>
-          <h5 class="slideIn">Coming with an awesome site</h5>
+          <h5 class="slideIn">Need a web developer? Look no further</h5>
           <p class="col-lg-10 col-sm-12 pad-zero">
-            This demo is specially crafted for Photographers, Artists &
-            Designers. It includes all required features from Portfolio to
-            Contact form and Social Links to Notify Form. It is a minimal &
-            artistic representation of a coming soon website.
+            Well hello! Didn't see you there... Wanna know something about me, huh? Why? Are you working for the police? If not, nice to meet you, my name is Dijana Lazic , I'm 22 years old and I live in a house. In Belgrade.
           </p>
         </section>
         <section class="download">
@@ -82,23 +79,13 @@
       <div class="col-xs-12 align-center text-end">
         <ul class="social-links fadeRight">
           <li>
-            <a href="#" class="social-icon">
+            <a href="https://www.linkedin.com/in/dijana-lazic-bb75571bb/" class="social-icon">
+              <span class="fa" data-hover="&#xf0e1;">&#xf0e1;</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/dijanadixy.lazic.3" class="social-icon">
               <span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-icon">
-              <span class="fa" data-hover="&#xf099;">&#xf099;</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-icon">
-              <span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social-icon">
-              <span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
             </a>
           </li>
         </ul>
@@ -176,10 +163,7 @@
           <div class="col-lg-12">
             <h3>the projects</h3>
             <p>
-              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-              consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
-              amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-              velit.
+              After successfully finishing kindergarten, elementary school and high school, I realized I needed a new challenge... I always wanted to talk to the machines and the best way to do that is by learning computer languages. I will be able to speak to my laptop, right?
             </p>
           </div>
         </div>
@@ -196,11 +180,20 @@
               <div
                 class="hover d-flex justify-content-center align-items-center"
               >
-                <span>+</span>
+                <a href="{{project.link}}">
+                  <i class="fa fa-external-link-square"></i>
+                </a>
+                <a href="{{project.gitLink}}">
+                  <i class="fa fa-github"></i>
+                </a>
               </div>
             </a>
-            <figcaption>{{ project }}</figcaption>
+            <figcaption>{{ project.name }}</figcaption>
           </figure>
+          <div class="quote">
+            <p>"Her sites are really enLIGHTENING!"</p>
+            <p><i class="fa fa-bolt"></i>Thor</p>
+          </div>
         </div>
       </section>
     </div>
@@ -214,8 +207,7 @@
       [ngClass]="rightOpen ? 'fadeRight' : ''" 
       >
         <h3>
-          Hey <span>{{ f.value.inputName || "there" }}</span> happy to hear from
-          you.
+          Hey <span>{{ f.value.inputName || "there" }}</span>. Interested? Of course you are!
         </h3>
         <div>
           <form
@@ -290,7 +282,7 @@
               <span class="line-from-top"></span>
             </div>
             <span>visit</span>
-            <p>350 Fifth Avenue, New York 10118.</p>
+            <p>Belgrade</p>
           </div>
           <div class="col-sm-4 margin-btm-sm">
             <div class="line-top">
@@ -298,7 +290,7 @@
             </div>
             <span>reach</span>
             <a href="mailto:hello@theme-nerds.com" target="_blank"
-              >inquiry@beavis.com</a
+              >dijana.lazic991&commat;gmail.com</a
             >
           </div>
           <div class="col-sm-4 margin-btm-sm">
@@ -306,7 +298,7 @@
               <span class="line-from-top"></span>
             </div>
             <span>call</span>
-            <a href="callto:954788315970" target="_blank">+95 (478) 831-5970</a>
+            <a href="callto:954788315970" target="_blank">061/515-5525</a>
           </div>
         </div>
       </section>

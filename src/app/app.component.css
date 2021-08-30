@@ -67,7 +67,7 @@ ul {
 }
 
 ::selection {
-  background-color: #f8ec2e;
+  background-color: #ab2d53;
   color: #000;
 }
 
@@ -394,6 +394,28 @@ ul {
   opacity: 1;
 }
 
+.projects-wrap figure a div a {
+  font-size: 19px;
+}
+
+.projects-wrap figure a div a:first-child {
+  width: 19%;
+}
+
+.quote{
+  width: 50%;
+  margin: 0px auto;
+}
+
+.quote p{
+  text-align: center;
+  font-style: italic;
+}
+
+.quote p i{
+  margin-right: 2px;
+}
+
 /* forma */
 
 .form-item .input-wrap input,
@@ -489,7 +511,7 @@ textarea {
 }
 
 .line-from-top {
-  background: #36cdff none repeat scroll 0 0;
+  background: #ab2d53 none repeat scroll 0 0;
   display: block;
   height: 2px;
   text-align: center;
