@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
-  endpoint = 'http://localhost:8000/mail.php';
+  endpoint = 'https://dijana-lazic.herokuapp.com/mail.php';
 
   constructor(http: HttpClient, private projectsService:ProjectsService) {
     this.http = http;
