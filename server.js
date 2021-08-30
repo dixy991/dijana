@@ -5,12 +5,13 @@ function requireHTTPS(req, res, next) {
   }
   next();
 }
-app.use(requireHTTPS);
 //Install express server
 const express = require("express");
 const path = require("path");
 
 const app = express();
+
+app.use(requireHTTPS);
 
 // Serve only the static files form the dist directory
 app.use(express.static("./dist/dijana"));
