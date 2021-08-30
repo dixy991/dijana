@@ -564,6 +564,12 @@ textarea {
 
 /* responsive */
 
+@media (max-width: 1600px) {
+  .add-padding {
+    padding-top: 175px;
+  }
+}
+
 @media (max-width: 1024px) {
   #split-layout {
     height: auto;
