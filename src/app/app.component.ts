@@ -11,7 +11,7 @@ import { Project} from 'src/app/modules/Project';
 })
 export class AppComponent implements OnInit {
   visitor: string = '';
-  projects: Array<string> = [];
+  projects: Project[] = [];
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
