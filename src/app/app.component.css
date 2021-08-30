@@ -569,6 +569,12 @@ textarea {
     padding-top: 135px;
   }
   .side-left {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .side-left {
     padding-top: 40px;
   }
 }
