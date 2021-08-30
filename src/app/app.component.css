@@ -613,6 +613,9 @@ textarea {
   footer p {
     color: #fff;
   }
+  .intro-text{
+    margin-top: 200px;
+  }
   .intro-text h1 {
     font-size: 2.5em;
   }
