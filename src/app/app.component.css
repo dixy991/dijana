@@ -518,8 +518,6 @@ textarea {
 
 .open-left {
   transform: translateX(0%);
-  animation: fadeLeft 1s;
-  animation-fill-mode: both;
 }
 
 .close-left {
@@ -528,8 +526,6 @@ textarea {
 
 .open-right {
   transform: translateX(100%);
-  animation: fadeRight 1s;
-  animation-fill-mode: both;
 }
 
 .semi-close-side-left {
