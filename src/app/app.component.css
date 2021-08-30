@@ -620,7 +620,7 @@ textarea {
     font-size: 2.5em;
   }
   .download {
-    min-height: 150px;
+    min-height: 100px;
   }
   .timer {
     position: static;
