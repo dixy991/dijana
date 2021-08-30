@@ -11,7 +11,8 @@ import { Project} from 'src/app/modules/Project';
 })
 export class AppComponent implements OnInit {
   visitor: string = '';
-  projects: Array<any> = [];
+  // projects: Project[] = [];
+  projects:Array<string>=[]
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
@@ -24,14 +25,15 @@ export class AppComponent implements OnInit {
   ngOnInit():void {
     this.startClock();
     this.changeOnResponsive();
-    this.projectsService.getAllProjects().subscribe(
-      (Response: Array<any>) => {
-        this.projects = Response;
-      },
-      error => {
-        alert("Sorry, we have a little technical difficulties!");
-      }
-    );
+    this.projects=["da","da","da","dad"]
+    // this.projectsService.getAllProjects().subscribe(
+    //   (Response: Project[]) => {
+    //     this.projects = Response;
+    //   },
+    //   error => {
+    //     alert("Sorry, we have a little technical difficulties!");
+    //   }
+    // );
   }
 
   openLeft() {
