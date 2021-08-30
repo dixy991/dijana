@@ -1,0 +1,311 @@
+<div id="split-layout">
+  <div class="intro">
+    <div
+      class="side side-left"
+      [ngClass]="leftOpen ? 'semi-close-side-left' : 'close-side-left'"
+      [ngClass]="rightOpen ? 'left-to-smaller' : 'left-to-normal'"
+    >
+      <div class="open-side projects">
+        <div>
+          <span
+            class="open"
+            [ngClass]="leftOpen ? 'hide' : 'show'"
+            (click)="openLeft()"
+          >
+            the projects
+            <span class="line-under"></span>
+          </span>
+          <span
+            class="close hide"
+            [ngClass]="leftOpen ? 'show' : 'hide'"
+            (click)="openLeft()"
+          >
+            close x
+            <span class="line-under"></span>
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-12 align-center content-wrap add-padding">
+        <section class="intro-text">
+          <h1 class="slideIn">Dijana Lazic</h1>
+          <h5 class="slideIn">Coming with an awesome site</h5>
+          <p class="col-lg-10 col-sm-12 pad-zero">
+            This demo is specially crafted for Photographers, Artists &
+            Designers. It includes all required features from Portfolio to
+            Contact form and Social Links to Notify Form. It is a minimal &
+            artistic representation of a coming soon website.
+          </p>
+        </section>
+        <section class="download">
+          <div>
+            <a href="#">Download my CV</a>
+            <span class="cover"></span>
+          </div>
+        </section>
+        <section class="auth-rights container-fluid tag-wrap">
+          <div class="row">
+            <header class="logo text-left">
+              <img src="../assets/img/logo.png" alt="" />
+            </header>
+            <footer class="copyright-text">
+              <p class="">Pampered by a nerd &copy; 2021</p>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div
+      class="side side-right"
+      [ngClass]="rightOpen ? 'semi-close-side-right' : 'close-side-right'"
+      [ngClass]="leftOpen ? 'right-to-smaller' : 'right-to-normal'"
+    >
+      <div class="open-side contact">
+        <div>
+          <span
+            class="open"
+            [ngClass]="rightOpen ? 'hide' : 'show'"
+            (click)="openRight()"
+          >
+            get in touch
+            <span class="line-under"></span>
+          </span>
+          <span
+            class="close hide"
+            [ngClass]="rightOpen ? 'show' : 'hide'"
+            (click)="openRight()"
+          >
+            close x
+            <span class="line-under"></span>
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-12 align-center text-end">
+        <ul class="social-links fadeRight">
+          <li>
+            <a href="#" class="social-icon">
+              <span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <span class="fa" data-hover="&#xf099;">&#xf099;</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-icon">
+              <span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section class="timer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="81px"
+          height="81px"
+          viewBox="0 0 81 81"
+          enable-background="new 0 0 81 81"
+          xml:space="preserve"
+        >
+          <switch>
+            <g>
+              <circle
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-miterlimit="10"
+                cx="40.5"
+                cy="40.5"
+                r="40"
+              ></circle>
+              <circle fill="#FFFFFF" cx="40.5" cy="40.5" r="2.806"></circle>
+              <line
+                id="min"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                x1="40.5"
+                y1="10.5"
+                x2="40.5"
+                y2="40.5"
+                transform="rotate(66 40.5 40.5)"
+              ></line>
+              <line
+                id="hour"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                x1="40.5"
+                y1="20.5"
+                x2="40.5"
+                y2="40.5"
+                transform="rotate(305.5 40.5 40.5)"
+              ></line>
+              <line
+                id="sec"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-miterlimit="10"
+                x1="40.5"
+                y1="7.5"
+                x2="40.5"
+                y2="40.5"
+                transform="rotate(144 40.5 40.5)"
+              ></line>
+            </g>
+          </switch>
+        </svg>
+      </section>
+    </div>
+  </div>
+  <div class="page page-left" [ngClass]="leftOpen ? 'open-left' : 'close-left'">
+    <div class="page-full">
+      <section class="container-fluid fadeLeft align-center text-left sec-pad">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>the projects</h3>
+            <p>
+              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
+              amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+              velit.
+            </p>
+          </div>
+        </div>
+        <div class="projects-wrap row">
+          <figure
+            *ngFor="let project of projects; let i = index"
+            class="col-sm-6 margin-btm-lg margin-btm-xs"
+          >
+            <a href="#">
+              <img
+                src="{{ '../assets/img/project' + [i + 1] + '.jpg' }}"
+                alt="project{{ i }}"
+              />
+              <div
+                class="hover d-flex justify-content-center align-items-center"
+              >
+                <span>+</span>
+              </div>
+            </a>
+            <figcaption>{{ project }}</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div
+    class="page page-right"
+    [ngClass]="rightOpen ? 'open-right' : 'close-right'"
+  >
+    <div class="page-full">
+      <section>
+        <h3>
+          Hey <span>{{ f.value.inputName || "there" }}</span> happy to hear from
+          you.
+        </h3>
+        <div>
+          <form
+            action="../mail.php"
+            method="post"
+            (ngSubmit)="onSubmit(f)"
+            #f="ngForm"
+            class="row form-horizontal"
+          >
+            <div class="form-item col-sm-6">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="inputName"
+                  ngModel
+                  #name="ngModel"
+                  id="inputName"
+                  placeholder="Name"
+                  required
+                  autocomplete="off"
+                />
+                <label for="inputName" class="form-label"></label>
+              </div>
+            </div>
+            <div class="form-item col-sm-6">
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  name="inputEmail"
+                  id="inputEmail"
+                  placeholder="Email"
+                  ngModel
+                  #email="ngModel"
+                  autocomplete="off"
+                  required
+                  email
+                />
+                <label for="inputEmail" class="form-label"></label>
+              </div>
+            </div>
+            <div class="form-item col-sm-12">
+              <div class="input-wrap">
+                <textarea
+                  rows="4"
+                  ngModel
+                  #message="ngModel"
+                  name="inputMessage"
+                  id="inputMessage"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <label for="inputMessage" class="form-label"></label>
+              </div>
+            </div>
+            <div class="form-item col-sm-12">
+              <button
+                type="submit"
+                name="btnSubmit"
+                class="btn"
+                [disabled]="!f.valid"
+              >
+                Send
+                <span class="cover"></span>
+              </button>
+            </div>
+          </form>
+          <p class="result"></p>
+        </div>
+        <div class="row address">
+          <div class="col-sm-4 margin-btm-sm">
+            <div class="line-top">
+              <span class="line-from-top"></span>
+            </div>
+            <span>visit</span>
+            <p>350 Fifth Avenue, New York 10118.</p>
+          </div>
+          <div class="col-sm-4 margin-btm-sm">
+            <div class="line-top">
+              <span class="line-from-top"></span>
+            </div>
+            <span>reach</span>
+            <a href="mailto:hello@theme-nerds.com" target="_blank"
+              >inquiry@beavis.com</a
+            >
+          </div>
+          <div class="col-sm-4 margin-btm-sm">
+            <div class="line-top">
+              <span class="line-from-top"></span>
+            </div>
+            <span>call</span>
+            <a href="callto:954788315970" target="_blank">+95 (478) 831-5970</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

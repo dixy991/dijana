@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+body {
+  background-color: #121212;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+html,
+body,
+.container {
+  position: relative;
+  height: 100%;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
