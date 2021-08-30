@@ -80,7 +80,7 @@ ul {
 }
 
 .side-left {
-  padding-top: 40px;
+  padding-top: 100px;
   left: 0;
 }
 
@@ -148,7 +148,7 @@ ul {
 }
 
 .add-padding {
-  padding-top: 135px;
+  padding-top: 175px;
   padding-left: 40px;
 }
 
@@ -566,7 +566,10 @@ textarea {
 
 @media (max-width: 1600px) {
   .add-padding {
-    padding-top: 175px;
+    padding-top: 135px;
+  }
+  .side-left {
+    padding-top: 40px;
   }
 }
 
