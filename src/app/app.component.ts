@@ -11,7 +11,7 @@ import { Project} from 'src/app/modules/Project';
 })
 export class AppComponent implements OnInit {
   visitor: string = '';
-  projects: Project[] = [];
+  projects: Array<any> = [];
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     this.startClock();
     this.changeOnResponsive();
     this.projectsService.getAllProjects().subscribe(
-      (Response: Project[]) => {
+      (Response: Array<any>) => {
         this.projects = Response;
       },
       error => {
