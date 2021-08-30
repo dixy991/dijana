@@ -334,6 +334,10 @@ ul {
   bottom: 0;
 }
 
+.page-right .page-full{
+  overflow-x: hidden;
+}
+
 .page-full {
   background-color: #121212;
   min-height: 577px;
