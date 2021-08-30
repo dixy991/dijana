@@ -169,7 +169,9 @@
   </div>
   <div class="page page-left" [ngClass]="leftOpen ? 'open-left' : 'close-left'">
     <div class="page-full">
-      <section class="container-fluid fadeLeft align-center text-left sec-pad">
+      <section class="container-fluid align-center text-left sec-pad"
+      [ngClass]="leftOpen ? 'fadeLeft' : ''"
+      >
         <div class="row">
           <div class="col-lg-12">
             <h3>the projects</h3>
@@ -208,7 +210,9 @@
     [ngClass]="rightOpen ? 'open-right' : 'close-right'"
   >
     <div class="page-full">
-      <section>
+      <section
+      [ngClass]="rightOpen ? 'fadeRight' : ''" 
+      >
         <h3>
           Hey <span>{{ f.value.inputName || "there" }}</span> happy to hear from
           you.
