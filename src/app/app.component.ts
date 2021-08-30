@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     this.http = http;
   }
 
-  ngOnInit() {
+  ngOnInit():void {
     this.startClock();
     this.changeOnResponsive();
     this.projectsService.getAllProjects().subscribe(
