@@ -366,11 +366,10 @@ ul {
   width: 100%;
 }
 
-.projects-wrap figure a {
+.projects-wrap figure > a {
   position: relative;
   display: block;
   cursor: default;
-  transition: all 0.4s ease-in-out;
 }
 
 .projects-wrap figure figcaption {
@@ -425,6 +424,7 @@ ul {
 .quote p:last-child i{
   color: #f8ec2e;
   font-style: italic;
+  transition: all 0.4s ease-in-out;
 }
 
 /* forma */
@@ -644,7 +644,7 @@ textarea {
     font-size: 2.5em;
   }
   .download {
-    min-height: 150px;
+    min-height: 100px;
   }
   .timer {
     position: static;
