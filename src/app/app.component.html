@@ -172,7 +172,7 @@
             *ngFor="let project of projects; let i = index"
             class="col-sm-6 margin-btm-lg margin-btm-xs"
           >
-            <div>
+            <a href="#">
               <img
                 src="{{ '../assets/img/project' + [i + 1] + '.jpg' }}"
                 alt="project{{ i }}"
@@ -187,7 +187,7 @@
                   <i class="fa fa-github"></i>
                 </a>
               </div>
-            </div>
+            </a>
             <!-- <figcaption>{{ project.name }}</figcaption> -->
             <figcaption>{{ project }}</figcaption>
           </figure>

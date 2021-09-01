@@ -366,10 +366,11 @@ ul {
   width: 100%;
 }
 
-.projects-wrap figure div {
+.projects-wrap figure a {
   position: relative;
   display: block;
-  cursor: pointer;
+  cursor: default;
+  transition: all 0.4s ease-in-out;
 }
 
 .projects-wrap figure figcaption {
@@ -391,19 +392,19 @@ ul {
   opacity: 0;
 }
 
-.projects-wrap figure div:hover .hover {
+.projects-wrap figure a:hover .hover {
   opacity: 1;
 }
 
-.projects-wrap figure div div a {
+.projects-wrap figure a div a {
   font-size: 19px;
 }
 
-.projects-wrap figure div div a:hover i{
+.projects-wrap figure a div a:hover i{
   color: #36cdff;
 }
 
-.projects-wrap figure div div a:first-child {
+.projects-wrap figure a div a:first-child {
   width: 19%;
 }
 
