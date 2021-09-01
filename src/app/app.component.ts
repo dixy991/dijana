@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     this.changeOnResponsive();
     this.projects=["da","da","da","dad"]
     this.projectsService.getAllProjects().subscribe(
-      (Response: any[]) => {
+      (Response) => {
         this.projectsServ = Response;
         console.log(this.projectsServ)
       },

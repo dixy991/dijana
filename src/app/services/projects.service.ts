@@ -9,6 +9,6 @@ export class ProjectsService {
   constructor(private httpservice: HttpClient) { }
 
   getAllProjects(){
-    return this.httpservice.get("../../assets/data/projects.json");
+    return this.httpservice.get("../../assets/data/projets.json");
   }
 }
