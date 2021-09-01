@@ -149,7 +149,7 @@ ul {
 
 .add-padding {
   padding-top: 175px;
-  padding-left: 40px;
+  padding-left: 100px;
 }
 
 .line-under {
@@ -255,6 +255,8 @@ ul {
 .auth-rights {
   padding: 0px;
   margin-top: 5px;
+  position: absolute;
+  bottom: 64px;
 }
 
 .copyright-text {
@@ -270,7 +272,7 @@ ul {
 }
 
 .side-right .col-xs-12 {
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 .social-links {
@@ -601,11 +603,30 @@ textarea {
 /* responsive */
 
 @media (max-width: 1600px) {
+  .auth-rights {
+    bottom: 37px;
+  }
   .add-padding {
     padding-top: 135px;
+    padding-left: 75px;
+  }
+  .side-right .col-xs-12 {
+    padding-right: 75px;
   }
   .side-left {
     padding-top: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .auth-rights {
+    bottom: 3px;
+  }
+  .add-padding {
+    padding-left: 40px;
+  }
+  .side-right .col-xs-12 {
+    padding-right: 40px;
   }
 }
 
