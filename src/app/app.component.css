@@ -90,7 +90,7 @@ ul {
 
 .side-left,
 .side-right {
-  background: transparent url("../assets/img/mainbg.jpeg");
+  background: transparent url("../assets/img/mainbg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -399,6 +399,10 @@ ul {
   font-size: 19px;
 }
 
+.projects-wrap figure a div a i{
+  transition: all 0.4s ease-in-out;
+}
+
 .projects-wrap figure a div a:hover i{
   color: #36cdff;
 }
@@ -424,7 +428,6 @@ ul {
 .quote p:last-child i{
   color: #f8ec2e;
   font-style: italic;
-  transition: all 0.4s ease-in-out;
 }
 
 /* forma */
