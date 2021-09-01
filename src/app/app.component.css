@@ -117,7 +117,7 @@ ul {
   height: 20px;
   width: 150px;
   font-size: 14px;
-  top: 105px;
+  top: 163px;
   transform: rotate(-90deg);
   display: block;
   transition: all 0.6s ease-in-out;
@@ -132,11 +132,11 @@ ul {
 }
 
 .projects {
-  left: -28px;
+  left: 32px;
 }
 
 .contact {
-  right: -28px;
+  right: 32px;
 }
 
 .open {
@@ -276,7 +276,7 @@ ul {
 }
 
 .social-links {
-  margin: 143px 0px 57px;
+  margin: 212px 0 57px;
 }
 
 .social-links li {
@@ -610,11 +610,23 @@ textarea {
     padding-top: 135px;
     padding-left: 75px;
   }
+  .social-links {
+   margin: 178px 0 57px;
+  }
   .side-right .col-xs-12 {
     padding-right: 75px;
   }
   .side-left {
-    padding-top: 40px;
+    padding-top: 75px;
+  }
+  .open-side{
+    top: 140px;
+  }
+  .projects {
+    left: 6px;
+  }
+  .contact {
+    right: 6px;
   }
 }
 
@@ -625,8 +637,23 @@ textarea {
   .add-padding {
     padding-left: 40px;
   }
+  .social-links {
+    margin: 143px 0px 57px;
+  }
   .side-right .col-xs-12 {
     padding-right: 40px;
+  }
+  .side-left {
+    padding-top: 40px;
+  }
+  .open-side{
+    top: 105px;
+  }
+   .projects {
+    left: -28px;
+  }
+  .contact {
+    right: -28px;
   }
 }
 
