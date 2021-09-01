@@ -26,14 +26,15 @@ export class AppComponent implements OnInit {
     this.startClock();
     this.changeOnResponsive();
     this.projects=["da","da","da","dad"]
-    // this.projectsService.getAllProjects().subscribe(
-    //   (Response: Project[]) => {
-    //     this.projects = Response;
-    //   },
-    //   error => {
-    //     alert("Sorry, we have a little technical difficulties!");
-    //   }
-    // );
+    this.projectsService.getAllProjects().subscribe(
+      (Response: Project[]) => {
+        this.projectsServ = Response;
+        console.log(this.projectsServ)
+      },
+      error => {
+        alert("Sorry, we have a little technical difficulties!");
+      }
+    );
   }
 
   openLeft() {
