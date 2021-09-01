@@ -11,8 +11,7 @@ import { Project} from 'src/app/modules/Project';
 })
 export class AppComponent implements OnInit {
   visitor: string = '';
-  projectsServ:any;
-  projects:Array<string>=[]
+  projects:any;
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
@@ -25,11 +24,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.startClock();
     this.changeOnResponsive();
-    this.projects=["da","da","da","dad"]
     this.projectsService.getAllProjects().subscribe(
       (Response) => {
-        this.projectsServ = Response;
-        console.log(this.projectsServ)
+        this.projects = Response;
       },
       error => {
         alert("Sorry, we have a little technical difficulties!");

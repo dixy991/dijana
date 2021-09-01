@@ -180,16 +180,16 @@
               <div
                 class="hover d-flex justify-content-center align-items-center"
               >
-                <a href="#">
+                <a href="{{project.link}}" *ngIf="{{project.link!=''}}">
                   <i class="fa fa-external-link-square"></i>
                 </a>
-                <a href="#">
+                <a href="{{project.gitLink}}">
                   <i class="fa fa-github"></i>
                 </a>
               </div>
             </a>
             <!-- <figcaption>{{ project.name }}</figcaption> -->
-            <figcaption>{{ project }}</figcaption>
+            <figcaption>{{ project.name }}</figcaption>
           </figure>
           <div class="quote">
             <p>"Her sites are really enLIGHTENING!"</p>

@@ -1,52 +1,52 @@
 [
     {
         "name":"Deadpool",
-        "link":"#",
-        "gitLink":"#"
-    },
-    {
-        "name":"Sacha Baron Cohen",
-        "link":"#",
-        "gitLink":"#"
+        "link":"",
+        "gitLink":"https://github.com/dixy991/Deadpool"
     },
     {
         "name":"First portfolio",
-        "link":"#",
-        "gitLink":"#"
+        "link":"https://znaciporfolio.netlify.app/",
+        "gitLink":"https://github.com/dixy991/Portfolio"
+    },
+    {
+        "name":"Sacha Baron Cohen",
+        "link":"https://sachabaroncohen.netlify.app/",
+        "gitLink":"https://github.com/dixy991/Portfolio"
     },
     {
         "name":"LEScandLES",
-        "link":"#",
-        "gitLink":"#"
+        "link":"https://lescandles.netlify.app/",
+        "gitLink":"https://github.com/dixy991/LEScandLES"
     },
     {
         "name":"Kevin Hart",
-        "link":"#",
-        "gitLink":"#"
+        "link":"https://theikevinhart.netlify.app/",
+        "gitLink":"https://github.com/dixy991/Kevin-Hart"
     },
     {
         "name":"Kevin Hart Shop",
-        "link":"#",
-        "gitLink":"#"
+        "link":"",
+        "gitLink":"https://github.com/dixy991/Kevin-Hart-Shop"
     },
     {
         "name":"Bucket list with Keanu Reeves",
-        "link":"#",
+        "link":"https://bucketlistnkeanureeves.000webhostapp.com/",
         "gitLink":"#"
     },
     {
         "name":"Chess2Chess",
-        "link":"#",
-        "gitLink":"#"
+        "link":"",
+        "gitLink":"https://github.com/dixy991/Chess2Chess"
     },
     {
         "name":"Dixoteka",
-        "link":"#",
-        "gitLink":"#"
+        "link":"",
+        "gitLink":"https://github.com/dixy991/Dixoteka"
     },
     {
         "name":"Quizzmax",
-        "link":"#",
-        "gitLink":"#"
+        "link":"",
+        "gitLink":"https://github.com/dixy991/Quizzmax"
     }
 ]
