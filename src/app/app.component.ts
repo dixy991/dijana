@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   leftOpen: boolean = false;
   rightOpen: boolean = false;
   http: HttpClient;
-  endpoint = '../mail.php';
+  endpoint = './mail/mail.php';
 
   constructor(http: HttpClient, private projectsService:ProjectsService) {
     this.http = http;
