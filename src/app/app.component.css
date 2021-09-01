@@ -67,7 +67,7 @@ ul {
 }
 
 ::selection {
-  background-color: #ab2d53;
+  background-color: #f8ec2e;
   color: #000;
 }
 
@@ -205,7 +205,6 @@ ul {
 
 .download {
   margin-top: 35px;
-  min-height: 150px;
 }
 
 .download a {
@@ -367,9 +366,10 @@ ul {
   width: 100%;
 }
 
-.projects-wrap figure a {
+.projects-wrap figure div {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .projects-wrap figure figcaption {
@@ -391,15 +391,19 @@ ul {
   opacity: 0;
 }
 
-.projects-wrap figure a:hover .hover {
+.projects-wrap figure div:hover .hover {
   opacity: 1;
 }
 
-.projects-wrap figure a div a {
+.projects-wrap figure div div a {
   font-size: 19px;
 }
 
-.projects-wrap figure a div a:first-child {
+.projects-wrap figure div div a:hover i{
+  color: #36cdff;
+}
+
+.projects-wrap figure div div a:first-child {
   width: 19%;
 }
 
@@ -415,6 +419,11 @@ ul {
 
 .quote p i{
   margin-right: 2px;
+}
+
+.quote p:last-child i{
+  color: #f8ec2e;
+  font-style: italic;
 }
 
 /* forma */
@@ -512,7 +521,7 @@ textarea {
 }
 
 .line-from-top {
-  background: #ab2d53 none repeat scroll 0 0;
+  background: #36cdff none repeat scroll 0 0;
   display: block;
   height: 2px;
   text-align: center;
@@ -634,7 +643,7 @@ textarea {
     font-size: 2.5em;
   }
   .download {
-    min-height: 100px;
+    min-height: 150px;
   }
   .timer {
     position: static;
