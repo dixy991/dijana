@@ -11,7 +11,7 @@ import { Project} from 'src/app/modules/Project';
 })
 export class AppComponent implements OnInit {
   visitor: string = '';
-  projectsServ = [];
+  projectsServ:any;
   projects:Array<string>=[]
   leftOpen: boolean = false;
   rightOpen: boolean = false;
