@@ -661,6 +661,9 @@ textarea {
   #split-layout {
     height: auto;
   }
+  .auth-rights {
+    position: static;
+  }
   .side,
   .page {
     position: static;
